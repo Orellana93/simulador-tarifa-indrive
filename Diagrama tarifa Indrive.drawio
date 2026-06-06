@@ -1,0 +1,264 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="k4LTDw0SBXQJI_01wxYK">
+    <mxGraphModel dx="975" dy="1681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Formalización del Requerimiento" vertex="1">
+          <mxGeometry height="50" width="150" x="235" y="-260" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;" value="&lt;span style=&quot;&quot;&gt;Implementar un Simulador de Tarifa Digital, que tome 4 datos del cliente (nomnre, distancia, hora de salida y tipo de vehiculo) y calcule una tarifa base. Para el calculo de la tarifa se usarán las sigueintes reglas:&lt;/span&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;Regla #1: Tarifa básica por tipo de vehículo&lt;/li&gt;&lt;li&gt;Regla #2: Recargo por hora pico.&lt;/li&gt;&lt;li&gt;Regla #3: Descuento por ditancia.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Regla #4: Tarifa Mínima&lt;/li&gt;&lt;li&gt;Regla #5: Redondeo&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="390" x="415" y="-350" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-4" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="25" y="-190" as="sourcePoint" />
+            <mxPoint x="807" y="-190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Análisis" vertex="1">
+          <mxGeometry height="60" width="90" x="40" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Entrada" vertex="1">
+          <mxGeometry height="30" width="120" x="160" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Porceso" vertex="1">
+          <mxGeometry height="30" width="250" x="336" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Salida" vertex="1">
+          <mxGeometry height="30" width="120" x="645" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;" value="nombre (cadena)&lt;div&gt;distancia (real)&lt;/div&gt;&lt;div&gt;hora de salida (entero)&lt;/div&gt;&lt;div&gt;tipo de vehiculo (entero)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="140" x="160" y="-150" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;fontSize=10;" value="&lt;div&gt;Regla #1&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;b&gt;subtotal&lt;/b&gt; = tarifabase + (costokm * km)&lt;/div&gt;&lt;div&gt;&lt;div&gt;Regla #2&lt;/div&gt;&lt;div&gt;Hora entre 7 y 9 o 17 y 20&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;subtotal &lt;/b&gt;= subtotal + (&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;subtotal *1.30&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;Regla #3&lt;/div&gt;&lt;div&gt;Distancia &amp;gt; 15km&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;subtotal &lt;/b&gt;= subtotal + (&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;subtotal * 0.95&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;Regla #4&lt;/div&gt;&lt;div&gt;No se puede tener un subtotal menor a 5.00&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Regla #5:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Redondeo&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="265" x="337" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Tarifa Final" vertex="1">
+          <mxGeometry height="30" width="90" x="645" y="-140" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1;fontSize=15;" value="Caso inDrive : Simulador de tarifa Digital" vertex="1">
+          <mxGeometry height="30" width="300" x="55" y="-410" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-14" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;fillColor=#f8cecc;strokeColor=#b85450;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="50" y="980" as="sourcePoint" />
+            <mxPoint x="720" y="980" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Objetivo&lt;/b&gt;: implementar un siomular de tarifa digital" vertex="1">
+          <mxGeometry height="30" width="280" x="55" y="-370" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;b&gt;Reglas de Negocio:&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul style=&quot;text-align: left;&quot;&gt;&lt;li&gt;Regla #1: Tarifa básica por tipo de vehículo&lt;/li&gt;&lt;li&gt;Regla #2: Recargo por hora pico.&lt;/li&gt;&lt;li&gt;Regla #3: Descuento por ditancia.&amp;nbsp;&lt;/li&gt;&lt;li&gt;Regla #4: Tarifa Mínima&lt;/li&gt;&lt;li&gt;Regla #5: Redondeo&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="350" x="20" y="-350" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1" value="Implementación" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-88" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="388.05882352941194" y="-50.000000000000455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fontSize=10;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="INICIO" vertex="1">
+          <mxGeometry height="35" width="70" x="353" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-36" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-22">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="388" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-20" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" value="Leer nombre, distancia, hora, tipoVehiculo" vertex="1">
+          <mxGeometry height="45" width="240" x="268" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-41" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-49" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-41" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="4" vertex="1">
+          <mxGeometry relative="1" x="0.7646" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-43" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-44" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-43" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="otro" vertex="1">
+          <mxGeometry relative="1" x="0.6942" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-22" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;fillColor=#fff2cc;strokeColor=#d6b656;" value="tipoVehiculo" vertex="1">
+          <mxGeometry height="80" width="80" x="348" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-51" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="280" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-24" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="nombreVehiculo: Eco&lt;div&gt;tarifaBase=2.00&lt;/div&gt;&lt;div&gt;costoKm = 1.5&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="210" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-87" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="130" y="925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-28" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Escribir &quot;Opción no válida&quot;" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-52" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-31" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="nombreVehiculo: Conf&lt;div&gt;tarifaBase=3.00&lt;/div&gt;&lt;div&gt;costoKm = 2.0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="348" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-56" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-32" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="nombreVehiculo: Prem&lt;div&gt;tarifaBase=5.00&lt;/div&gt;&lt;div&gt;costoKm = 3.0&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="490" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-54" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="690" y="425" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-33" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="nombreVehiculo: Moto&lt;div&gt;tarifaBase=1.50&lt;/div&gt;&lt;div&gt;costoKm = 1&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="630" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-39" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.333;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="TBjrdgxMKs7O-VZz0rv4-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-46" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="2" vertex="1">
+          <mxGeometry relative="1" x="0.1515" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-40" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.468;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" target="TBjrdgxMKs7O-VZz0rv4-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-47" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="3" vertex="1">
+          <mxGeometry relative="1" x="0.5721" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-42" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.46;entryY=0.018;entryDx=0;entryDy=0;entryPerimeter=0;" target="TBjrdgxMKs7O-VZz0rv4-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-45" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-42" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.499" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-58" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-57" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontSize=10;fillColor=#e1d5e7;strokeColor=#9673a6;" value="subtotal = tarifabase + (costokm * distancia)" vertex="1">
+          <mxGeometry height="30" width="272" x="340" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-66" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="510" />
+            </Array>
+            <mxPoint x="620" y="560" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-76" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-66" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="-0.498" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-67" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="510" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-75" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-67" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="SI" vertex="1">
+          <mxGeometry relative="1" x="-0.4033" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-57" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;rounded=0;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="hora &amp;gt;=7 y hora &amp;lt;=9 o hora &amp;gt;=17 y hora &amp;lt;=20" vertex="1">
+          <mxGeometry height="80" width="172" x="390" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-59" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="FIN" vertex="1">
+          <mxGeometry height="50" width="94" x="441.5" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-74" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-61" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="esHoraPico = false" vertex="1">
+          <mxGeometry height="60" width="120" x="562" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-73" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-63" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="subtotal = subtotal * 1.30" vertex="1">
+          <mxGeometry height="60" width="120" x="280" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-68" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="670" />
+            </Array>
+            <mxPoint x="630" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-78" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-68" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="NO" vertex="1">
+          <mxGeometry relative="1" x="0.0298" y="-3" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-69" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="670" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-77" connectable="0" parent="TBjrdgxMKs7O-VZz0rv4-69" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="SI" vertex="1">
+          <mxGeometry relative="1" x="-0.2731" y="2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-70" parent="1" style="rhombus;whiteSpace=wrap;html=1;fontSize=10;rounded=0;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="distancia &amp;gt; 15" vertex="1">
+          <mxGeometry height="80" width="172" x="400" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-81" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-79">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-71" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="esDistancia = false" vertex="1">
+          <mxGeometry height="60" width="120" x="572" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-80" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-79" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-72" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="subtotal = subtotal * 0.95&lt;div&gt;esDistancia = true&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="290" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-84" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="TBjrdgxMKs7O-VZz0rv4-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-79" parent="1" style="whiteSpace=wrap;html=1;fontSize=10;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" value="tarifaFinal = Max(subtotal, 5)" vertex="1">
+          <mxGeometry height="30" width="143" x="417" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-86" edge="1" parent="1" source="TBjrdgxMKs7O-VZz0rv4-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="TBjrdgxMKs7O-VZz0rv4-59" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TBjrdgxMKs7O-VZz0rv4-83" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=10;fillColor=#d5e8d4;strokeColor=#82b366;" value="Escribir tarifaFinal" vertex="1">
+          <mxGeometry height="29" width="137" x="420" y="850" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
