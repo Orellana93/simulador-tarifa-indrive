@@ -4,7 +4,7 @@ public static class SimuladorTarifa
     {
         Console.WriteLine("========================================================");
         Console.WriteLine("               InDrive - Simulador de Tarifa            ");
-        Console.WriteLine("===============================================");
+        Console.WriteLine("========================================================");
         //Entrada de Datos
         Console.Write("Nombre del Pasajero: ");
         string nombrePasajero = Console.ReadLine();
@@ -24,5 +24,25 @@ public static class SimuladorTarifa
 
         //Proceso
         
+        switch (tipoVehiculo)
+        {
+            case 1:
+                Console.WriteLine($"\nTarifa para {nombrePasajero}: ${distancia * 1.0}");
+                break;
+            case 2:
+                Console.WriteLine($"\nTarifa para {nombrePasajero}: ${distancia * 1.5}");
+                break;
+            case 3:
+                Console.WriteLine($"\nTarifa para {nombrePasajero}: ${distancia * 2.0}");
+                break;
+            case 4:
+                Console.WriteLine($"\nTarifa para {nombrePasajero}: ${distancia * 0.8}");
+                break;
+            default:
+                Console.WriteLine("\nTipo de vehículo no válido.");
+                break;
+        }
+
+
     }
 }
