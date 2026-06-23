@@ -1,0 +1,91 @@
+
+public static class S6_Calculadora_A
+{
+    public static void Main(string[] args)
+    {
+        //Entrada
+        //Declaración
+        int opcion;
+        do
+        {
+            MostrarMenu();
+            opcion = LeerOpcionMenu();
+            switch (opcion)
+            {
+                case 1:
+                    CalcularAreaCirculo();
+                    break;
+                case 2:
+                    CalcularAreaTriangulo();
+                    break;
+                case 3:
+                    CalcularAreaCuadrado();
+                    break;
+                case 0:
+                    Console.WriteLine("Saliendo del programa...");
+                    break;
+                default:
+                    Console.WriteLine("Opción no válida. Intente nuevamente.");
+                    break;
+            }
+        }while (opcion != 0);
+    }
+
+    public static void CalcularAreaCirculo()
+    {
+        double area, radio;
+        radio = LeerNumeroPositivo("Ingrese radio del círculo: ");
+        area = Math.PI * Math.Pow(radio, 2);
+        Console.WriteLine("El área del círculo es: " + Math.Round(area, 2));
+    }
+
+    public static void CalcularAreaTriangulo()
+    {
+        double area, _base, altura;
+        _base = LeerNumeroPositivo("Ingrese la base del triángulo: ");
+        altura = LeerNumeroPositivo("Ingrese la altura del triángulo: ");
+        area = ( _base * altura ) / 2;
+        Console.WriteLine("El área del triángulo es: " + Math.Round(area, 2));
+    }
+
+    public static void CalcularAreaCuadrado()
+    {
+        double area, lado;
+        lado = LeerNumeroPositivo("Ingrese el lado del cuadrado: ");
+        area = Math.Pow(lado, 2);
+        Console.WriteLine("El área del cuadrado es: " + Math.Round(area, 2));
+    }
+
+    public static void MostrarMenu()
+    {
+        Console.WriteLine("================ Calculado de areas ===================");
+        Console.WriteLine("1. Área de del círculo");
+        Console.WriteLine("2. Área de del triángulo");
+        Console.WriteLine("3. Área de del cuadrado");
+        Console.WriteLine("0. Salir");        
+    }
+    public static int LeerOpcionMenu()
+    {
+        Console.Write("Ingrese una opción: ");
+        int opcion = Convert.ToInt32(Console.ReadLine());
+        return opcion;        
+    }
+
+    //Función ayuda
+    public static double LeerNumeroPositivo(string _mensaje)
+    {
+        double numero;
+        bool esValido;
+
+        do
+        {
+            Console.Write(_mensaje);
+            esValido = double.TryParse(Console.ReadLine(), out numero) && numero > 0;
+            if (!esValido)
+            {
+                Console.WriteLine("Número no válido. Intente nuevamente.");
+            }
+        } while (!esValido);
+        return numero;
+    }    
+}
